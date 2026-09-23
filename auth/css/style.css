@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3ead8;
+    color: #29213d;
+}
+
+
+/* Auth Page */
+
+.auth-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* Login Card */
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+
+    background: #fffaf0;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    border: 1px solid #dfd1b8;
+
+    box-shadow: 0 8px 25px rgba(70, 50, 100, 0.10);
+}
+
+
+/* Header */
+
+.auth-card h1 {
+    margin: 0;
+
+    text-align: center;
+
+    color: #6d4bc3;
+
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #665d72;
+
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+
+/* Form */
+
+.auth-card label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #342653;
+
+    font-weight: bold;
+}
+
+.auth-card input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #d8c9ad;
+
+    border-radius: 8px;
+
+    background: #fffdf8;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+.auth-card input:focus {
+    outline: none;
+
+    border-color: #7652c9;
+
+    box-shadow: 0 0 0 2px rgba(118, 82, 201, 0.10);
+}
+
+.success {
+    background: #dfead5;
+    color: #4f6b3f;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Login Button */
+
+.auth-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #7652c9;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.auth-card button:hover {
+    background: #6040ad;
+}
+
+
+/* Error */
+
+.error {
+    background: #f3dce0;
+
+    color: #9b3f52;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+
+/* Register */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #665d72;
+
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #6d4bc3;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    color: #4f329c;
+
+    text-decoration: underline;
+}

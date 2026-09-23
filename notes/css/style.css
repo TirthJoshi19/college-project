@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3ead8;
+    color: #29213d;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 240px;
+    background: #eee2cc;
+    border-right: 1px solid #d8c9ad;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #6d4bc3;
+}
+
+.sidebar p {
+    color: #665d72;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3d3452;
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #e2d5bc;
+}
+
+.sidebar .create-button {
+    background: #7652c9;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar .create-button:hover {
+    background: #6040ad;
+}
+
+
+/* Main content */
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.top-bar {
+    margin-bottom: 30px;
+}
+
+.top-bar h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #342653;
+}
+
+
+/* Notes */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.note-card {
+    background: #fffaf0;
+    border-radius: 12px;
+    padding: 22px;
+    min-height: 180px;
+
+    border: 1px solid #dfd1b8;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 12px rgba(70, 50, 100, 0.08);
+}
+
+.note-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #5d3faa;
+}
+
+.note-card p {
+    color: #5d5668;
+    line-height: 1.5;
+
+    flex: 1;
+
+    white-space: pre-wrap;
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.note-actions a {
+    text-decoration: none;
+    color: #6d4bc3;
+    font-size: 14px;
+}
+
+.note-actions a:hover {
+    color: #4f329c;
+    text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 180px;
+        padding: 20px 12px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+}
+
+.note-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fffaf0;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #dfd1b8;
+    box-shadow: 0 4px 12px rgba(70, 50, 100, 0.08);
+}
+
+.note-card p {
+    color: #5d5668;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
